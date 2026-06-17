@@ -1,0 +1,595 @@
+/* ============================================================
+   PT MAJU JAYA — CUSTOM THEME
+   Color Palette:
+   --lime-cream:       #d6ff79  (aksen hijau kuning terang)
+   --grapefruit-pink:  #ff9191  (aksen merah muda)
+   --lavender-blush:   #fff2f1  (background utama)
+   --soft-periwinkle:  #a09be7  (ungu muda)
+   --ultrasonic-blue:  #5f00ba  (ungu tua — warna primer)
+   ============================================================ */
+
+/* ── GLOBAL ── */
+body {
+    background-color: #fff2f1 !important;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ── SIDEBAR ── */
+.sidebar {
+    background: linear-gradient(180deg, #5f00ba 0%, #3d007a 100%) !important;
+}
+
+.sidebar .sidebar-brand {
+    background: rgba(0, 0, 0, 0.15) !important;
+    color: #d6ff79 !important;
+}
+
+.sidebar .sidebar-brand-text {
+    color: #d6ff79 !important;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.sidebar .sidebar-brand-icon i {
+    color: #d6ff79 !important;
+}
+
+.sidebar hr.sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.sidebar .sidebar-heading {
+    color: #a09be7 !important;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.13rem;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    margin-top: 0.5rem;
+}
+
+.sidebar .nav-item .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.35rem;
+    margin: 0.1rem 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.sidebar .nav-item .nav-link:hover {
+    color: #d6ff79 !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sidebar .nav-item.active .nav-link {
+    color: #5f00ba !important;
+    background-color: #d6ff79 !important;
+    font-weight: 700;
+    border-radius: 0.35rem;
+}
+
+.sidebar .nav-item.active .nav-link i {
+    color: #5f00ba !important;
+}
+
+.sidebar .nav-item .nav-link i {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar .nav-item.active .nav-link i {
+    color: #5f00ba !important;
+}
+
+/* Sidebar collapse inner */
+.sidebar .collapse-inner {
+    border-radius: 0.35rem;
+    background-color: #fff2f1 !important;
+    box-shadow: 0 0.15rem 1.75rem rgba(95, 0, 186, 0.15);
+}
+
+.sidebar .collapse-item {
+    color: #5f00ba !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.sidebar .collapse-item:hover,
+.sidebar .collapse-item.active {
+    background-color: #d6ff79 !important;
+    color: #5f00ba !important;
+}
+
+/* Sidebar toggle button */
+#sidebarToggle {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+    width: 2rem;
+    height: 2rem;
+}
+
+#sidebarToggle:hover {
+    background-color: #d6ff79 !important;
+}
+
+/* ── TOPBAR / NAVBAR ── */
+.topbar {
+    background: #ffffff !important;
+    border-bottom: 3px solid #5f00ba !important;
+    box-shadow: 0 2px 15px rgba(95, 0, 186, 0.1) !important;
+}
+
+.topbar .nav-link {
+    color: #5f00ba !important;
+}
+
+.topbar .topbar-divider {
+    border-right: 1px solid #a09be7 !important;
+}
+
+/* User badge di topbar */
+.topbar .text-gray-600 {
+    color: #5f00ba !important;
+}
+
+/* ── CARDS ── */
+.card {
+    background-color: #ffffff !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+    box-shadow: 0 4px 20px rgba(95, 0, 186, 0.08) !important;
+}
+
+.card-header {
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #f0e8ff !important;
+    border-radius: 0.75rem 0.75rem 0 0 !important;
+    padding: 1rem 1.25rem;
+}
+
+.card-header h6,
+.card-header .font-weight-bold {
+    color: #5f00ba !important;
+}
+
+/* Stat cards dengan border kiri */
+.card.border-left-primary {
+    border-left: 4px solid #5f00ba !important;
+}
+
+.card.border-left-success {
+    border-left: 4px solid #d6ff79 !important;
+    /* teks perlu kontras */
+}
+
+.card.border-left-info {
+    border-left: 4px solid #a09be7 !important;
+}
+
+.card.border-left-warning {
+    border-left: 4px solid #ff9191 !important;
+}
+
+/* Warna teks stat card */
+.text-primary {
+    color: #5f00ba !important;
+}
+
+.text-success {
+    color: #2d7a00 !important;  /* hijau gelap agar kontras */
+}
+
+.text-info {
+    color: #5f00ba !important;
+}
+
+.text-warning {
+    color: #c74b00 !important;  /* oranye gelap agar kontras */
+}
+
+/* ── PAGE HEADING ── */
+.h3.text-gray-800,
+h1.text-gray-800,
+h4.text-gray-800 {
+    color: #5f00ba !important;
+}
+
+/* ── BUTTONS ── */
+
+/* Primary → ultrasonic-blue dengan teks putih */
+.btn-primary {
+    background-color: #5f00ba !important;
+    border-color: #5f00ba !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #4a0090 !important;
+    border-color: #4a0090 !important;
+    color: #d6ff79 !important;
+    box-shadow: 0 4px 12px rgba(95, 0, 186, 0.4) !important;
+}
+
+/* Success → lime-cream dengan teks gelap agar kontras */
+.btn-success {
+    background-color: #d6ff79 !important;
+    border-color: #b8e040 !important;
+    color: #2d4a00 !important;
+    font-weight: 700;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #c4f050 !important;
+    border-color: #a8cc30 !important;
+    color: #1a3000 !important;
+    box-shadow: 0 4px 12px rgba(214, 255, 121, 0.5) !important;
+}
+
+/* Danger → grapefruit-pink dengan teks gelap */
+.btn-danger {
+    background-color: #ff9191 !important;
+    border-color: #ff6a6a !important;
+    color: #5a0000 !important;
+    font-weight: 700;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+    background-color: #ff6a6a !important;
+    border-color: #e04040 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(255, 145, 145, 0.5) !important;
+}
+
+/* Warning → soft-periwinkle */
+.btn-warning {
+    background-color: #a09be7 !important;
+    border-color: #8078d4 !important;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+    background-color: #8078d4 !important;
+    border-color: #6060c0 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(160, 155, 231, 0.5) !important;
+}
+
+/* Info → periwinkle muda */
+.btn-info {
+    background-color: #a09be7 !important;
+    border-color: #8078d4 !important;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.btn-info:hover,
+.btn-info:focus {
+    background-color: #5f00ba !important;
+    border-color: #5f00ba !important;
+    color: #d6ff79 !important;
+    box-shadow: 0 4px 12px rgba(95, 0, 186, 0.35) !important;
+}
+
+/* Secondary → netral abu */
+.btn-secondary {
+    background-color: #6c5f8a !important;
+    border-color: #6c5f8a !important;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #574c72 !important;
+    border-color: #574c72 !important;
+    color: #d6ff79 !important;
+}
+
+/* ── TABLES ── */
+.table thead th {
+    background-color: #5f00ba !important;
+    color: #ffffff !important;
+    border-color: #4a0090 !important;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table-bordered {
+    border-color: #e8e0f5 !important;
+}
+
+.table-bordered td,
+.table-bordered th {
+    border-color: #e8e0f5 !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f5f0ff !important;
+}
+
+/* ── BADGES ── */
+.badge-primary {
+    background-color: #5f00ba !important;
+    color: #ffffff !important;
+}
+
+.badge-success {
+    background-color: #d6ff79 !important;
+    color: #2d4a00 !important;
+    font-weight: 700;
+}
+
+.badge-warning {
+    background-color: #ff9191 !important;
+    color: #5a0000 !important;
+    font-weight: 700;
+}
+
+.badge-danger {
+    background-color: #c40000 !important;
+    color: #ffffff !important;
+}
+
+.badge-info {
+    background-color: #a09be7 !important;
+    color: #ffffff !important;
+}
+
+.badge-secondary {
+    background-color: #6c5f8a !important;
+    color: #ffffff !important;
+}
+
+/* Badge status order */
+.badge-draft {
+    background-color: #6c5f8a !important;
+    color: #ffffff !important;
+}
+
+.badge-dikirim {
+    background-color: #a09be7 !important;
+    color: #ffffff !important;
+}
+
+.badge-selesai {
+    background-color: #d6ff79 !important;
+    color: #2d4a00 !important;
+    font-weight: 700;
+}
+
+.badge-dibatalkan {
+    background-color: #ff9191 !important;
+    color: #5a0000 !important;
+    font-weight: 700;
+}
+
+/* Role badge di topbar */
+.badge-danger { /* admin */
+    background-color: #5f00ba !important;
+    color: #d6ff79 !important;
+}
+
+.badge-warning { /* manager */
+    background-color: #ff9191 !important;
+    color: #5a0000 !important;
+}
+
+.badge-pill.badge-primary { /* sales */
+    background-color: #a09be7 !important;
+    color: #ffffff !important;
+}
+
+/* ── FORM CONTROLS ── */
+.form-control {
+    border: 2px solid #d4c8f0 !important;
+    border-radius: 0.5rem !important;
+    color: #3a0070 !important;
+    background-color: #fdfaff !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #5f00ba !important;
+    box-shadow: 0 0 0 0.2rem rgba(95, 0, 186, 0.2) !important;
+    background-color: #ffffff !important;
+}
+
+.form-control-user {
+    border-radius: 2rem !important;
+    padding: 0.75rem 1.25rem !important;
+}
+
+label {
+    color: #5f00ba !important;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+/* ── PROGRESS BARS ── */
+.progress {
+    background-color: #f0e8ff !important;
+    border-radius: 1rem !important;
+}
+
+.progress-bar.bg-secondary {
+    background-color: #6c5f8a !important;
+}
+
+.progress-bar.bg-info {
+    background-color: #a09be7 !important;
+}
+
+.progress-bar.bg-success {
+    background-color: #d6ff79 !important;
+}
+
+.progress-bar.bg-danger {
+    background-color: #ff9191 !important;
+}
+
+/* ── ALERTS ── */
+.alert-success {
+    background-color: #d6ff79 !important;
+    border-color: #b8e040 !important;
+    color: #2d4a00 !important;
+}
+
+.alert-danger {
+    background-color: #ff9191 !important;
+    border-color: #ff6a6a !important;
+    color: #5a0000 !important;
+}
+
+/* ── MODAL ── */
+.modal-header {
+    background: linear-gradient(135deg, #5f00ba 0%, #3d007a 100%) !important;
+    color: #d6ff79 !important;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.modal-header .modal-title {
+    color: #d6ff79 !important;
+    font-weight: 700;
+}
+
+.modal-header .close {
+    color: #d6ff79 !important;
+    opacity: 1;
+}
+
+.modal-header.bg-danger {
+    background: linear-gradient(135deg, #ff9191 0%, #e04040 100%) !important;
+}
+
+.modal-header.bg-danger .modal-title {
+    color: #ffffff !important;
+}
+
+.modal-content {
+    border-radius: 0.75rem !important;
+    overflow: hidden;
+    border: none !important;
+    box-shadow: 0 10px 40px rgba(95, 0, 186, 0.25) !important;
+}
+
+/* ── FOOTER ── */
+.sticky-footer {
+    background: #ffffff !important;
+    border-top: 2px solid #e8e0f5 !important;
+    color: #5f00ba !important;
+}
+
+.sticky-footer span {
+    color: #5f00ba !important;
+    font-size: 0.8rem;
+}
+
+/* ── SCROLL TO TOP ── */
+.scroll-to-top {
+    background-color: #5f00ba !important;
+    color: #d6ff79 !important;
+}
+
+.scroll-to-top:hover {
+    background-color: #d6ff79 !important;
+    color: #5f00ba !important;
+}
+
+/* ── DROPDOWN ── */
+.dropdown-menu {
+    border: 1px solid #e8e0f5 !important;
+    box-shadow: 0 4px 20px rgba(95, 0, 186, 0.15) !important;
+    border-radius: 0.5rem !important;
+}
+
+.dropdown-item:hover {
+    background-color: #f5f0ff !important;
+    color: #5f00ba !important;
+}
+
+/* ── DATATABLES ── */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #5f00ba !important;
+    border-color: #5f00ba !important;
+    color: #d6ff79 !important;
+    border-radius: 0.35rem;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #a09be7 !important;
+    border-color: #a09be7 !important;
+    color: #ffffff !important;
+    border-radius: 0.35rem;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border: 2px solid #d4c8f0 !important;
+    border-radius: 2rem !important;
+    padding: 0.25rem 0.75rem;
+    color: #3a0070;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: #5f00ba !important;
+    outline: none;
+}
+
+/* ── THEAD TABLE OVERRIDE (dari header.php inline style) ── */
+table.dataTable thead th {
+    background-color: #5f00ba !important;
+    color: #ffffff !important;
+}
+
+/* ── PAGE HEADING ACCENT ── */
+.page-heading-bar {
+    border-left: 4px solid #5f00ba;
+    padding-left: 0.75rem;
+}
+
+/* ── CARD BG-LIGHT di form order ── */
+.card.bg-light {
+    background-color: #f5f0ff !important;
+    border: 1px solid #d4c8f0 !important;
+}
+
+.card.bg-light h6 {
+    color: #5f00ba !important;
+}
+
+/* ── THEAD-LIGHT override ── */
+.thead-light th {
+    background-color: #f5f0ff !important;
+    color: #5f00ba !important;
+    border-color: #d4c8f0 !important;
+    font-weight: 700;
+}
+
+/* ── INPUT GROUP ── */
+.input-group-text {
+    background-color: #5f00ba !important;
+    color: #d6ff79 !important;
+    border-color: #5f00ba !important;
+    font-weight: 700;
+}
+
+/* ── LINK ── */
+a {
+    color: #5f00ba;
+}
+
+a:hover {
+    color: #a09be7;
+}
