@@ -138,13 +138,14 @@ http://localhost/pt_majujaya
 ### Dashboard
 
 <p align="center">
-  <img src="docs/dashboard.png" width="800">
+  <img width="958" height="435" alt="image" src="https://github.com/user-attachments/assets/0f5039ff-3614-4e47-9466-44a652a67e40" />
 </p>
 
 ### Manajemen Data
 
 <p align="center">
-  <img src="docs/data.png" width="800">
+ <img width="946" height="438" alt="image" src="https://github.com/user-attachments/assets/178fbd15-557c-4c55-87a4-19f5defaf7ad" />
+<img width="959" height="440" alt="image" src="https://github.com/user-attachments/assets/5ea3e533-9ebc-4494-88f6-6366b5ddbeb4" />
 </p>
 
 ---
